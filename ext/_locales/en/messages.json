@@ -5,7 +5,7 @@
     "extDesc": {
         "message": "Write e-mails faster! Save thousands of keystrokes per day by using templates and tab completion"
     },
-    "new_quicktext": {
+    "NEW_QUICKTEXT": {
         "message": "New quicktext"
     }
 }

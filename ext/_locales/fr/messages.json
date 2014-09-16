@@ -4,5 +4,8 @@
     },
     "extDesc": {
         "message": "Écrivez vos e-mails plus rapidement! Économisez le temps en utilisant les templates et le \"TAB complétion\""
+    },
+    "NEW_QUICKTEXT": {
+        "message": "Nouveau quicktext"
     }
 }

@@ -6,8 +6,9 @@ var gqApp = angular.module('gqApp', [
         'ngResource',
         'ngAnimate',
         'angular-md5',
-        'angularMoment'
-    ]).config(function ($routeProvider, $compileProvider) {
+        'angularMoment',
+        'pascalprecht.translate'
+    ]).config(function ($routeProvider, $compileProvider, $translateProvider) {
 
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension):/);
 
@@ -28,6 +29,12 @@ var gqApp = angular.module('gqApp', [
             .otherwise({
                 redirectTo: '/list'
             });
+
+        var locale = chrome.i18n.getUILanguage();
+        var currentLang = locale.split('-')[0];
+
+        $translateProvider.useUrlLoader('/_locales/' + currentLang + '/messages.json');
+        $translateProvider.preferredLanguage('en');
     });
 
 // Add trackjs

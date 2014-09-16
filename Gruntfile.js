@@ -19,6 +19,8 @@ module.exports = function (grunt) {
                 'bower_components/angular-animate/angular-animate.js',
                 'bower_components/angular-md5/angular-md5.js',
                 'bower_components/angular-moment/angular-moment.js',
+                'bower_components/angular-translate/angular-translate.js',
+                'bower_components/angular-translate-loader-url/angular-translate-loader-url.js',
 
                 // Should be first
                 'src/background/js/environment.js',
